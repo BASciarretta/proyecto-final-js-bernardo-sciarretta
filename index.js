@@ -1,4 +1,43 @@
-class juegos {
+//Remove de cards
+let section = document.getElementById("section");
+section.remove();
+
+//Botón buscar
+let boton = document.getElementById("boton_buscar");
+
+boton.innerHTML += "<button id='boton_buscar'>Dark</button>";
+
+let boton_buscar = document.getElementById("boton_buscar");
+boton_buscar.innerText = "Buscar";
+
+//Input buscador
+let buscador_general = document.getElementById("buscador_general");
+
+console.log(buscador_general);
+
+
+//Select
+const videojuegos2 = ["WORLD OF WARCRAFT", "GOD OF WAR", "SUPER MARIO BROS", "THE LEGEND OF ZELDA", "RED DEAD REDEMPTION 2", "ELDEN RING"]
+
+let selectJuego = document.getElementById("videojuegos2");
+
+let opcionNula = document.createElement("option");
+opcionNula.innerText = "Seleccione el videojuego";
+opcionNula.value = "";
+selectJuego.append(opcionNula);
+
+videojuegos2.forEach((juego, iJuego) => {
+
+    let option = document.createElement("option");
+    option.innerText = juego;
+    option.value = iJuego;
+
+    selectJuego.append(option);
+});
+
+
+
+/*class juegos {
     constructor(titulo, anio, fabricante, genero, disponibilidad, precio) {
         this.titulo = titulo;
         this.anio = parseInt(anio);
@@ -43,6 +82,4 @@ function filter() {
 }
 
 find();
-filter();
-
-
+filter();*/
