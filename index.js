@@ -2,14 +2,6 @@
 let section = document.getElementById("section");
 section.remove();
 
-//Botón buscar
-let boton = document.getElementById("boton_buscar");
-
-boton.innerHTML += "<button id='boton_buscar'>Dark</button>";
-
-let boton_buscar = document.getElementById("boton_buscar");
-boton_buscar.innerText = "Buscar";
-
 class juegos {
     constructor(titulo, anio, fabricante, genero, disponibilidad, precio) {
         this.titulo = titulo;
@@ -32,25 +24,7 @@ const videojuegos = [];
 
 videojuegos.push(juego1, juego2, juego3, juego4, juego5, juego6);
 
-
-
-/*function find() {
-    let fabricante = prompt("Ingrese el desarrollador del videojuego").toUpperCase();
-    const respuesta = videojuegos.find(item => item.fabricante == fabricante);
-    if (respuesta !== undefined) {
-        console.log("Tenemos juegos de " + fabricante)
-    } else {
-        console.log("Lo sentimos, no tenemos juegos de " + fabricante)
-    }
-}
-
-
-find();*/
-
-
-let input = document.getElementById("buscador_general");
-
-input.addEventListener("input", () => {
+function filter() {
     let valor = input.value;
     const respuesta = videojuegos.filter(juego => juego.titulo.toLowerCase() === valor.toLowerCase());
     if (respuesta[0].disponibilidad === true) {
@@ -60,6 +34,23 @@ input.addEventListener("input", () => {
     } else {
         alert("ERROR: introduzca otro juego");
     }
+}
+
+let input = document.getElementById("buscador_general");
+
+input.addEventListener("input", () => {
+
 });
 
+//Botón buscar
+let boton = document.getElementById("boton_buscar");
+boton.addEventListener("click", (e) => {
+    filter();
+    e.preventDefault();
+});
+
+boton.innerHTML += "<button id='boton_buscar'>Dark</button>";
+
+let boton_buscar = document.getElementById("boton_buscar");
+boton_buscar.innerText = "Buscar";
 
