@@ -10,34 +10,7 @@ boton.innerHTML += "<button id='boton_buscar'>Dark</button>";
 let boton_buscar = document.getElementById("boton_buscar");
 boton_buscar.innerText = "Buscar";
 
-//Input buscador
-let buscador_general = document.getElementById("buscador_general");
-
-console.log(buscador_general);
-
-
-//Select
-const videojuegos2 = ["WORLD OF WARCRAFT", "GOD OF WAR", "SUPER MARIO BROS", "THE LEGEND OF ZELDA", "RED DEAD REDEMPTION 2", "ELDEN RING"]
-
-let selectJuego = document.getElementById("videojuegos2");
-
-let opcionNula = document.createElement("option");
-opcionNula.innerText = "Seleccione el videojuego";
-opcionNula.value = "";
-selectJuego.append(opcionNula);
-
-videojuegos2.forEach((juego, iJuego) => {
-
-    let option = document.createElement("option");
-    option.innerText = juego;
-    option.value = iJuego;
-
-    selectJuego.append(option);
-});
-
-
-
-/*class juegos {
+class juegos {
     constructor(titulo, anio, fabricante, genero, disponibilidad, precio) {
         this.titulo = titulo;
         this.anio = parseInt(anio);
@@ -59,7 +32,9 @@ const videojuegos = [];
 
 videojuegos.push(juego1, juego2, juego3, juego4, juego5, juego6);
 
-function find() {
+
+
+/*function find() {
     let fabricante = prompt("Ingrese el desarrollador del videojuego").toUpperCase();
     const respuesta = videojuegos.find(item => item.fabricante == fabricante);
     if (respuesta !== undefined) {
@@ -69,9 +44,15 @@ function find() {
     }
 }
 
-function filter() {
-    let titulo = prompt("¿Qué juego desea buscar?").toUpperCase();
-    const respuesta = videojuegos.filter(item => item.titulo === titulo);
+
+find();*/
+
+
+let input = document.getElementById("buscador_general");
+
+input.addEventListener("input", () => {
+    let valor = input.value;
+    const respuesta = videojuegos.filter(juego => juego.titulo.toLowerCase() === valor.toLowerCase());
     if (respuesta[0].disponibilidad === true) {
         alert("El juego " + respuesta[0].titulo + " está disponible");
     } else if (respuesta[0].disponibilidad === false) {
@@ -79,7 +60,6 @@ function filter() {
     } else {
         alert("ERROR: introduzca otro juego");
     }
-}
+});
 
-find();
-filter();*/
+
