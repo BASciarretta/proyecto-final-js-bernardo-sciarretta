@@ -26,17 +26,12 @@ const videojuegos = [];
 
 videojuegos.push(juego1, juego2, juego3, juego4, juego5, juego6);
 
-//Función filter para juegos (disponibilidad)
+
+//Función filter para juegos (disponibilidad)  //Operador ternario
 function disponibilidad() {
     let valor = input.value;
     const respuesta = videojuegos.filter(juego => juego.titulo.toLowerCase() === valor.toLowerCase());
-    if (respuesta[0].disponibilidad === true) {
-        alert("El juego " + respuesta[0].titulo + " está disponible");
-    } else if (respuesta[0].disponibilidad === false) {
-        alert("El juego " + respuesta[0].titulo + " no está disponible");
-    } else {
-        alert("ERROR: introduzca otro juego");
-    }
+    (respuesta[0].disponibilidad === true) ? alert("El juego " + respuesta[0].titulo + " está disponible") : alert("El juego " + respuesta[0].titulo + " no está disponible");
 }
 
 //Barra de búsqueda
@@ -59,9 +54,8 @@ function agregarALocalStorage(games) {
     const videojuegos = localStorage.getItem("videojuegos");
     let arrayVideojuegos = [];
 
-    if (videojuegos !== null) {
-        arrayVideojuegos = JSON.parse(videojuegos);
-    }
+    //Operador ternario
+    (videojuegos !== null) ? arrayVideojuegos = JSON.parse(videojuegos) : null;
 
     arrayVideojuegos.push(games);
 
