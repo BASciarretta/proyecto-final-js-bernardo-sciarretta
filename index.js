@@ -31,7 +31,7 @@ videojuegos.push(juego1, juego2, juego3, juego4, juego5, juego6);
 function disponibilidad() {
     let valor = input.value;
     const respuesta = videojuegos.filter(juego => juego.titulo.toLowerCase() === valor.toLowerCase());
-    (respuesta[0].disponibilidad === true) ? alert("El juego " + respuesta[0].titulo + " está disponible") : alert("El juego " + respuesta[0].titulo + " no está disponible");
+    (respuesta[0].disponibilidad === true) ? Swal.fire("El juego " + respuesta[0].titulo + " está disponible") : Swal.fire("El juego " + respuesta[0].titulo + " no está disponible");
 }
 
 //Barra de búsqueda
