@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "WORLD OF WARCRAFT",
+    "fabricante": "BLIZZARD",
+    "genero": "MMO-RPG",
+    "precio": 3000,
+    "imagen": "img/world-of-warcraft.jpg"
+  },
+  {
+    "titulo": "GOD OF WAR",
+    "fabricante": "SANTA MÓNICA STUDIO",
+    "genero": "Acción",
+    "precio": 1000,
+    "imagen": "img/god-of-war.jpg"
+  },
+  {
+    "titulo": "SUPER MARIO BROS",
+    "fabricante": "NINTENDO",
+    "genero": "Plataformas",
+    "precio": 2500,
+    "imagen": "img/super-mario-bros.jpg"
+  },
+  {
+    "titulo": "THE LEGEND OF ZELDA",
+    "fabricante": "NINTENDO",
+    "genero": "Aventuras-RPG",
+    "precio": 1000,
+    "imagen": "img/the-legend-of-zelda.jpg"
+  },
+  {
+    "titulo": "RED DEAD REDEMPTION 2",
+    "fabricante": "ROCKSTAR GAMES",
+    "genero": "Sandbox-Aventuras",
+    "precio": 3000,
+    "imagen": "img/rdr2.jpg"
+  },
+  {
+    "titulo": "ELDEN RING",
+    "fabricante": "FROMSOFTWARE",
+    "genero": "RPG-Acción",
+    "precio": 3500,
+    "imagen": "img/elden-ring.jpg"
+  }
+]
