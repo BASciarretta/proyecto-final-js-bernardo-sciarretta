@@ -3,9 +3,12 @@ const CardsJson = async () => {
   const respuesta = await fetch("/juegos.json")
   const juegos = await respuesta.json()
 
+  cardsConteiner = document.querySelector('#section')
+
   for (const juego of juegos) {
     let Cards = document.createElement("div")
-    Cards.innerHTML = (`<div class="col-lg-4 col-md-6 col-sm-12 p-2 d-flex justify-content-evenly">
+    Cards.classList.add("col-lg-4", "col-md-6", "col-sm-12", "p-2", "d-flex", "justify-content-evenly")
+    Cards.innerHTML = (`<div class="">
     <div class="card border border-dark" style="width: 18rem">
     <img src=${juego.imagen} class="card-img-top"/>
       <div class="card-body">
@@ -14,13 +17,13 @@ const CardsJson = async () => {
         <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
         <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-dark" id="carrito">Añadir al carrito</button>
+          <button type="button" class="btn btn-dark" id="${juego.id}">Añadir al carrito</button>
         </div>
       </div>
     </div>
   </div>`);
 
-    section.append(Cards);
+    cardsConteiner.appendChild(Cards);
   }
 }
 
@@ -87,7 +90,9 @@ function agregarALocalStorage(games) {
   localStorage.setItem("videojuegos", JSON.stringify(arrayVideojuegos));
 }
 
-const boton_carrito = document.getElementById("carrito");
+
+//Botón "Añadir al carrito"
+const boton_carrito = document.getElementById("${juego.id}");
 boton_carrito.addEventListener("click", () => {
 
   agregarALocalStorage(games);
