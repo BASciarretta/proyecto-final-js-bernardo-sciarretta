@@ -1,40 +1,7 @@
-//Generador de cards
-const CardsJson = async () => {
-  const respuesta = await fetch("/juegos.json")
-  const juegos = await respuesta.json()
-
-  cardsConteiner = document.querySelector('#section')
-
-  for (const juego of juegos) {
-    let Cards = document.createElement("div")
-    Cards.classList.add("col-lg-4", "col-md-6", "col-sm-12", "p-2", "d-flex", "justify-content-evenly")
-    Cards.innerHTML = (`<div class="">
-    <div class="card border border-dark" style="width: 18rem">
-    <img src=${juego.imagen} class="card-img-top"/>
-      <div class="card-body">
-        <h5 class="card-title d-flex justify-content-center">${juego.titulo}</h5>
-        <p class="card-text d-flex justify-content-center card-text1">${juego.fabricante}</p>
-        <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
-        <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
-        <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-dark" id="${juego.id}">Añadir al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>`);
-
-    cardsConteiner.appendChild(Cards);
-  }
-}
-
-CardsJson();
-
-
 //Objetos y array de juegos
 class juegos {
-  constructor(titulo, anio, fabricante, genero, disponibilidad, precio) {
+  constructor(titulo, fabricante, genero, disponibilidad, precio) {
     this.titulo = titulo;
-    this.anio = parseInt(anio);
     this.fabricante = fabricante;
     this.genero = genero;
     this.disponibilidad = disponibilidad;
@@ -42,18 +9,18 @@ class juegos {
   }
 }
 
-const juego1 = new juegos("STARCRAFT", 1998, "BLIZZARD", "RTS", false, 1000);
-const juego2 = new juegos("GTA 5", 2013, "ROCKSTAR GAMES", "Sandbox-Acción", false, 1500);
-const juego3 = new juegos("POKÉMON", 1999, "GAME FREAK", "Rol", false, 1000);
-const juego4 = new juegos("SILENT HILL", 1999, "KONAMI", "Survival horror", false, 2000);
-const juego5 = new juegos("CYBERPUNK 2077", 2020, "CD PROJEKT", "Sandbox-Acción", false, 3000);
-const juego6 = new juegos("V RISING", 2022, "STUNLOCK STUDIOS", "MMORPG-Survival", false, 3500);
-const juego7 = new juegos("WORLD OF WARCRAFT", 2005, "BLIZZARD", "MMO-RPG", true, 3000);
-const juego8 = new juegos("GOD OF WAR", 2005, "SANTA MÓNICA STUDIO", "Acción", true, 1000);
-const juego9 = new juegos("SUPER MARIO BROS", 1983, "NINTENDO", "Plataformas", true, 2500);
-const juego10 = new juegos("THE LEGEND OF ZELDA", 1986, "NINTENDO", "Aventuras-RPG", true, 1000);
-const juego11 = new juegos("RED DEAD REDEMPTION 2", 2018, "ROCKSTAR GAMES", "Sandbox-Aventuras", true, 3000);
-const juego12 = new juegos("ELDEN RING", 2022, "FROMSOFTWARE", "RPG-Acción", true, 3500);
+const juego1 = new juegos("STARCRAFT", "BLIZZARD", "RTS", false, 1000);
+const juego2 = new juegos("GTA 5", "ROCKSTAR GAMES", "Sandbox-Acción", false, 1500);
+const juego3 = new juegos("POKÉMON", "GAME FREAK", "Rol", false, 1000);
+const juego4 = new juegos("SILENT HILL", "KONAMI", "Survival horror", false, 2000);
+const juego5 = new juegos("CYBERPUNK 2077", "CD PROJEKT", "Sandbox-Acción", false, 3000);
+const juego6 = new juegos("V RISING", "STUNLOCK STUDIOS", "MMORPG-Survival", false, 3500);
+const juego7 = new juegos("WORLD OF WARCRAFT", "BLIZZARD", "MMO-RPG", true, 3000);
+const juego8 = new juegos("GOD OF WAR", "SANTA MÓNICA STUDIO", "Acción", true, 1000);
+const juego9 = new juegos("SUPER MARIO BROS", "NINTENDO", "Plataformas", true, 2500);
+const juego10 = new juegos("THE LEGEND OF ZELDA", "NINTENDO", "Aventuras-RPG", true, 1000);
+const juego11 = new juegos("RED DEAD REDEMPTION 2", "ROCKSTAR GAMES", "Sandbox-Aventuras", true, 3000);
+const juego12 = new juegos("ELDEN RING", "FROMSOFTWARE", "RPG-Acción", true, 3500);
 
 const videojuegos = [];
 
@@ -76,24 +43,73 @@ boton_buscar.addEventListener("click", (e) => {
 });
 
 
-// Storage y JSON
-localStorage.clear();
 
-function agregarALocalStorage(games) {
-  const videojuegos = localStorage.getItem("videojuegos");
-  let arrayVideojuegos = [];
+//Generador de cards
+const CardsJson = async () => {
+  const respuesta = await fetch("/juegos.json")
+  const juegos = await respuesta.json()
 
-  (videojuegos !== null) ? arrayVideojuegos = JSON.parse(videojuegos) : null;
+  cardsConteiner = document.querySelector('#CardsSection')
 
-  arrayVideojuegos.push(games);
+  for (const juego of juegos) {
+    let Cards = document.createElement("div")
+    Cards.classList.add("col-lg-4", "col-md-6", "col-sm-12", "p-2", "d-flex", "justify-content-evenly")
+    Cards.innerHTML = (`<div class="">
+    <div class="card border border-dark" style="width: 18rem">
+    <img src=${juego.imagen} class="card-img-top"/>
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center">${juego.titulo}</h5>
+        <p class="card-text d-flex justify-content-center card-text1">${juego.fabricante}</p>
+        <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
+        <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-dark button">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>`);
 
-  localStorage.setItem("videojuegos", JSON.stringify(arrayVideojuegos));
+    cardsConteiner.appendChild(Cards);
+  }
+}
+
+CardsJson();
+
+
+function AñadirAlCarrito() {
+  let button = document.getElementsByClassName('button')
+  for (const boton of button) {
+    boton.addEventListener('click', function () {
+      let seleccion = videojuegos.find(juegos => juegos.titulo == this.titulo);
+
+      carritoCompras.push(seleccion)
+
+      localStorage.setItem("JuegosEnCarrito", JSON.stringify(carritoCompras));
+
+      let consoleCarrito = JSON.parse(localStorage.getItem("JuegosEnCarrito"));
+      console.log(consoleCarrito);
+
+    })
+  }
 }
 
 
-//Botón "Añadir al carrito"
-const boton_carrito = document.getElementById("${juego.id}");
-boton_carrito.addEventListener("click", () => {
+AñadirAlCarrito();
 
-  agregarALocalStorage(games);
-});
+
+
+
+
+
+
+
+/*const carritoCompras = [];
+
+const Carrito = async () => {
+  const respuesta = await fetch("/juegos.json");
+  const carritoCompras = await respuesta.json();
+
+  carritoContainer = document.querySelector('#CarritoSection')}
+  
+  Carrito();
+  */
