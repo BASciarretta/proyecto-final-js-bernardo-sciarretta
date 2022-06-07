@@ -43,7 +43,6 @@ boton_buscar.addEventListener("click", (e) => {
 });
 
 
-
 //Generador de cards
 const CardsJson = async () => {
   const respuesta = await fetch("/juegos.json")
@@ -63,53 +62,18 @@ const CardsJson = async () => {
         <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
         <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-dark button">Añadir al carrito</button>
+          <button type="button" class="btn btn-dark boton">Añadir al carrito</button>
         </div>
       </div>
     </div>
   </div>`);
 
     cardsConteiner.appendChild(Cards);
+
   }
 }
-
 CardsJson();
 
 
-function AñadirAlCarrito() {
-  let button = document.getElementsByClassName('button')
-  for (const boton of button) {
-    boton.addEventListener('click', function () {
-      let seleccion = videojuegos.find(juegos => juegos.titulo == this.titulo);
-
-      carritoCompras.push(seleccion)
-
-      localStorage.setItem("JuegosEnCarrito", JSON.stringify(carritoCompras));
-
-      let consoleCarrito = JSON.parse(localStorage.getItem("JuegosEnCarrito"));
-      console.log(consoleCarrito);
-
-    })
-  }
-}
-
-
-AñadirAlCarrito();
-
-
-
-
-
-
-
-
-/*const carritoCompras = [];
-
-const Carrito = async () => {
-  const respuesta = await fetch("/juegos.json");
-  const carritoCompras = await respuesta.json();
-
-  carritoContainer = document.querySelector('#CarritoSection')}
-  
-  Carrito();
-  */
+const Clickbutton = document.getElementsByClassName('boton');
+console.log(Clickbutton)
