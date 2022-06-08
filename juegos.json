@@ -5,7 +5,7 @@
     "genero": "MMO-RPG",
     "precio": 3000,
     "imagen": "img/world-of-warcraft.jpg",
-    "id": "world_of_warcraft"
+    "id": 7
   },
   {
     "titulo": "GOD OF WAR",
@@ -13,7 +13,7 @@
     "genero": "Acción",
     "precio": 1000,
     "imagen": "img/god-of-war.jpg",
-    "id": "god_of_war"
+    "id": 8
   },
   {
     "titulo": "SUPER MARIO BROS",
@@ -21,7 +21,7 @@
     "genero": "Plataformas",
     "precio": 2500,
     "imagen": "img/super-mario-bros.jpg",
-    "id": "super_mario_bros"
+    "id": 9
   },
   {
     "titulo": "THE LEGEND OF ZELDA",
@@ -29,7 +29,7 @@
     "genero": "Aventuras-RPG",
     "precio": 1000,
     "imagen": "img/the-legend-of-zelda.jpg",
-    "id": "the_legend_of_zelda"
+    "id": 10
   },
   {
     "titulo": "RED DEAD REDEMPTION 2",
@@ -37,7 +37,7 @@
     "genero": "Sandbox-Aventuras",
     "precio": 3000,
     "imagen": "img/rdr2.jpg",
-    "id": "red_dead_redemption_2"
+    "id": 11
   },
   {
     "titulo": "ELDEN RING",
@@ -45,6 +45,60 @@
     "genero": "RPG-Acción",
     "precio": 3500,
     "imagen": "img/elden-ring.jpg",
-    "id": "elden_ring"
+    "id": 12
+  },
+  {
+    "titulo": "STARCRAFT",
+    "fabricante": "BLIZZARD",
+    "genero": "RTS",
+    "disponibilidad": false,
+    "precio": 1000,
+    "imagen": "img/starcraft.jpg",
+    "id": 1
+  },
+  {
+    "titulo": "GTA 5",
+    "fabricante": "ROCKSTAR GAMES",
+    "genero": "Sandbox-Acción",
+    "disponibilidad": false,
+    "precio": 1500,
+    "imagen": "img/gta-5.jpeg",
+    "id": 2
+  },
+  {
+    "titulo": "POKÉMON",
+    "fabricante": "GAME FREAK",
+    "genero": "Rol",
+    "disponibilidad": false,
+    "precio": 1000,
+    "imagen": "img/pokemon.jpg",
+    "id": 3
+  },
+  {
+    "titulo": "SILENT HILL",
+    "fabricante": "KONAMI",
+    "genero": "Survival horror",
+    "disponibilidad": false,
+    "precio": 2000,
+    "imagen": "img/silent-hill.jpg",
+    "id": 4
+  },
+  {
+    "titulo": "CYBERPUNK 2077",
+    "fabricante": "CD PROJEKT",
+    "genero": "Sandbox-Acción",
+    "disponibilidad": false,
+    "precio": 3000,
+    "imagen": "img/cyberpunk-2077.jpg",
+    "id": 5
+  },
+  {
+    "titulo": "V RISING",
+    "fabricante": "STUNLOCK STUDIOS",
+    "genero": "MMORPG-Survival",
+    "disponibilidad": false,
+    "precio": 3500,
+    "imagen": "img/v-rising.jpg",
+    "id": 6
   }
 ]
