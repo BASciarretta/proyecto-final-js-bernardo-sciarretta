@@ -5,7 +5,7 @@
     "genero": "MMO-RPG",
     "precio": 3000,
     "imagen": "img/world-of-warcraft.jpg",
-    "id": 7
+    "id": 1
   },
   {
     "titulo": "GOD OF WAR",
@@ -13,7 +13,7 @@
     "genero": "Acción",
     "precio": 1000,
     "imagen": "img/god-of-war.jpg",
-    "id": 8
+    "id": 2
   },
   {
     "titulo": "SUPER MARIO BROS",
@@ -21,7 +21,7 @@
     "genero": "Plataformas",
     "precio": 2500,
     "imagen": "img/super-mario-bros.jpg",
-    "id": 9
+    "id": 3
   },
   {
     "titulo": "THE LEGEND OF ZELDA",
@@ -29,7 +29,7 @@
     "genero": "Aventuras-RPG",
     "precio": 1000,
     "imagen": "img/the-legend-of-zelda.jpg",
-    "id": 10
+    "id": 4
   },
   {
     "titulo": "RED DEAD REDEMPTION 2",
@@ -37,7 +37,7 @@
     "genero": "Sandbox-Aventuras",
     "precio": 3000,
     "imagen": "img/rdr2.jpg",
-    "id": 11
+    "id": 5
   },
   {
     "titulo": "ELDEN RING",
@@ -45,7 +45,7 @@
     "genero": "RPG-Acción",
     "precio": 3500,
     "imagen": "img/elden-ring.jpg",
-    "id": 12
+    "id": 6
   },
   {
     "titulo": "STARCRAFT",
@@ -54,7 +54,7 @@
     "disponibilidad": false,
     "precio": 1000,
     "imagen": "img/starcraft.jpg",
-    "id": 1
+    "id": 7
   },
   {
     "titulo": "GTA 5",
@@ -63,7 +63,7 @@
     "disponibilidad": false,
     "precio": 1500,
     "imagen": "img/gta-5.jpeg",
-    "id": 2
+    "id": 8
   },
   {
     "titulo": "POKÉMON",
@@ -72,7 +72,7 @@
     "disponibilidad": false,
     "precio": 1000,
     "imagen": "img/pokemon.jpg",
-    "id": 3
+    "id": 9
   },
   {
     "titulo": "SILENT HILL",
@@ -81,7 +81,7 @@
     "disponibilidad": false,
     "precio": 2000,
     "imagen": "img/silent-hill.jpg",
-    "id": 4
+    "id": 10
   },
   {
     "titulo": "CYBERPUNK 2077",
@@ -90,7 +90,7 @@
     "disponibilidad": false,
     "precio": 3000,
     "imagen": "img/cyberpunk-2077.jpg",
-    "id": 5
+    "id": 11
   },
   {
     "titulo": "V RISING",
@@ -99,6 +99,6 @@
     "disponibilidad": false,
     "precio": 3500,
     "imagen": "img/v-rising.jpg",
-    "id": 6
+    "id": 12
   }
 ]

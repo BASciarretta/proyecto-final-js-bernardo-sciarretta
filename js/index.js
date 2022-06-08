@@ -10,18 +10,18 @@ class juegos {
   }
 }
 
-const juego1 = new juegos("WORLD OF WARCRAFT", "BLIZZARD", "MMO-RPG", true, 3000, 7);
-const juego2 = new juegos("GOD OF WAR", "SANTA MÓNICA STUDIO", "Acción", true, 1000, 8);
-const juego3 = new juegos("SUPER MARIO BROS", "NINTENDO", "Plataformas", true, 2500, 9);
-const juego4 = new juegos("THE LEGEND OF ZELDA", "NINTENDO", "Aventuras-RPG", true, 1000, 10);
-const juego5 = new juegos("RED DEAD REDEMPTION 2", "ROCKSTAR GAMES", "Sandbox-Aventuras", true, 3000, 11);
-const juego6 = new juegos("ELDEN RING", "FROMSOFTWARE", "RPG-Acción", true, 3500, 12);
-const juego7 = new juegos("STARCRAFT", "BLIZZARD", "RTS", false, 1000, 1);
-const juego8 = new juegos("GTA 5", "ROCKSTAR GAMES", "Sandbox-Acción", false, 1500, 2);
-const juego9 = new juegos("POKÉMON", "GAME FREAK", "Rol", false, 1000, 3);
-const juego10 = new juegos("SILENT HILL", "KONAMI", "Survival horror", false, 2000, 4);
-const juego11 = new juegos("CYBERPUNK 2077", "CD PROJEKT", "Sandbox-Acción", false, 3000, 5);
-const juego12 = new juegos("V RISING", "STUNLOCK STUDIOS", "MMORPG-Survival", false, 3500, 6);
+const juego1 = new juegos("WORLD OF WARCRAFT", "BLIZZARD", "MMO-RPG", true, 3000, 1);
+const juego2 = new juegos("GOD OF WAR", "SANTA MÓNICA STUDIO", "Acción", true, 1000, 2);
+const juego3 = new juegos("SUPER MARIO BROS", "NINTENDO", "Plataformas", true, 2500, 3);
+const juego4 = new juegos("THE LEGEND OF ZELDA", "NINTENDO", "Aventuras-RPG", true, 1000, 4);
+const juego5 = new juegos("RED DEAD REDEMPTION 2", "ROCKSTAR GAMES", "Sandbox-Aventuras", true, 3000, 5);
+const juego6 = new juegos("ELDEN RING", "FROMSOFTWARE", "RPG-Acción", true, 3500, 6);
+const juego7 = new juegos("STARCRAFT", "BLIZZARD", "RTS", false, 1000, 7);
+const juego8 = new juegos("GTA 5", "ROCKSTAR GAMES", "Sandbox-Acción", false, 1500, 8);
+const juego9 = new juegos("POKÉMON", "GAME FREAK", "Rol", false, 1000, 9);
+const juego10 = new juegos("SILENT HILL", "KONAMI", "Survival horror", false, 2000, 10);
+const juego11 = new juegos("CYBERPUNK 2077", "CD PROJEKT", "Sandbox-Acción", false, 3000, 11);
+const juego12 = new juegos("V RISING", "STUNLOCK STUDIOS", "MMORPG-Survival", false, 3500, 12);
 
 const videojuegos = [];
 
