@@ -46,7 +46,7 @@ boton_buscar.addEventListener("click", (e) => {
 
 //Generador de cards
 const Cards = async () => {
-  const respuesta = await fetch("/juegos.json")
+  const respuesta = await fetch("../juegos.json")
   const juegos = await respuesta.json()
 
   cardsConteiner = document.querySelector('#CardsSection')
