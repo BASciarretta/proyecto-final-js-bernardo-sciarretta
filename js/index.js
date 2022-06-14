@@ -63,7 +63,7 @@ const Cards = async () => {
         <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
         <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-dark boton" id=${juego.id}>Añadir al carrito</button>
+          <button onClick="agregarALocalStorage(juegos)" type="button" class="btn btn-dark boton" id=${juego.id}>Añadir al carrito</button>
         </div>
       </div>
     </div>
@@ -72,20 +72,21 @@ const Cards = async () => {
     cardsConteiner.appendChild(Cards);
 
   }
-  BotonesDeCards();
+
 }
 Cards();
 
 
-//Botones de cards
-function BotonesDeCards() {
-  let botones = document.getElementsByClassName('boton');
-  for (const boton of botones) {
-    boton.addEventListener("click", () => {
-      let seleccion = videojuegos.find(juego => juego.id === this.id);
-      console.log(seleccion)
+// Almacenamiento en Storage
+localStorage.clear();
 
-    })
-  }
+function agregarALocalStorage(juegos) {
+  const videojuegos = localStorage.getItem("videojuegos");
+  let arrayVideojuegos = [];
 
+  (videojuegos !== null) ? arrayVideojuegos = JSON.parse(videojuegos) : null;
+
+  arrayVideojuegos.push(juegos);
+
+  localStorage.setItem("videojuegos", JSON.stringify(arrayVideojuegos));
 }
