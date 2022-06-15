@@ -63,7 +63,7 @@ const Cards = async () => {
         <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
         <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
         <div class="d-flex justify-content-center">
-          <button onClick="agregarALocalStorage(juegos)" type="button" class="btn btn-dark boton" id=${juego.id}>Añadir al carrito</button>
+          <button onClick="agregarALocalStorage(this.id)" type="button" class="btn btn-dark boton" id=${juego.id}>Añadir al carrito</button>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@ const Cards = async () => {
 Cards();
 
 
-// Almacenamiento en Storage
+//Almacenamiento en Storage
 localStorage.clear();
 
 function agregarALocalStorage(juegos) {
@@ -90,3 +90,4 @@ function agregarALocalStorage(juegos) {
 
   localStorage.setItem("videojuegos", JSON.stringify(arrayVideojuegos));
 }
+
