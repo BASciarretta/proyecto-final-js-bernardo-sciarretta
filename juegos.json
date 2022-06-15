@@ -5,7 +5,7 @@
     "genero": "MMO-RPG",
     "precio": 3000,
     "imagen": "img/world-of-warcraft.jpg",
-    "id": 1
+    "id": "world_of_warcraft"
   },
   {
     "titulo": "GOD OF WAR",
@@ -13,7 +13,7 @@
     "genero": "Acción",
     "precio": 1000,
     "imagen": "img/god-of-war.jpg",
-    "id": 2
+    "id": "god_of_war"
   },
   {
     "titulo": "SUPER MARIO BROS",
@@ -21,7 +21,7 @@
     "genero": "Plataformas",
     "precio": 2500,
     "imagen": "img/super-mario-bros.jpg",
-    "id": 3
+    "id": "super_mario_bros"
   },
   {
     "titulo": "THE LEGEND OF ZELDA",
@@ -29,7 +29,7 @@
     "genero": "Aventuras-RPG",
     "precio": 1000,
     "imagen": "img/the-legend-of-zelda.jpg",
-    "id": 4
+    "id": "the_legend_of_zelda"
   },
   {
     "titulo": "RED DEAD REDEMPTION 2",
@@ -37,7 +37,7 @@
     "genero": "Sandbox-Aventuras",
     "precio": 3000,
     "imagen": "img/rdr2.jpg",
-    "id": 5
+    "id": "red_dead_redemption_2"
   },
   {
     "titulo": "ELDEN RING",
@@ -45,7 +45,7 @@
     "genero": "RPG-Acción",
     "precio": 3500,
     "imagen": "img/elden-ring.jpg",
-    "id": 6
+    "id": "elden_ring"
   },
   {
     "titulo": "STARCRAFT",
@@ -54,7 +54,7 @@
     "disponibilidad": false,
     "precio": 1000,
     "imagen": "img/starcraft.jpg",
-    "id": 7
+    "id": "starcraft"
   },
   {
     "titulo": "GTA 5",
@@ -63,7 +63,7 @@
     "disponibilidad": false,
     "precio": 1500,
     "imagen": "img/gta-5.jpeg",
-    "id": 8
+    "id": "gta_5"
   },
   {
     "titulo": "POKÉMON",
@@ -72,7 +72,7 @@
     "disponibilidad": false,
     "precio": 1000,
     "imagen": "img/pokemon.jpg",
-    "id": 9
+    "id": "pokemon"
   },
   {
     "titulo": "SILENT HILL",
@@ -81,7 +81,7 @@
     "disponibilidad": false,
     "precio": 2000,
     "imagen": "img/silent-hill.jpg",
-    "id": 10
+    "id": "silent_hill"
   },
   {
     "titulo": "CYBERPUNK 2077",
@@ -90,7 +90,7 @@
     "disponibilidad": false,
     "precio": 3000,
     "imagen": "img/cyberpunk-2077.jpg",
-    "id": 11
+    "id": "cyberpunk_2077"
   },
   {
     "titulo": "V RISING",
@@ -99,6 +99,6 @@
     "disponibilidad": false,
     "precio": 3500,
     "imagen": "img/v-rising.jpg",
-    "id": 12
+    "id": "v_rising"
   }
 ]

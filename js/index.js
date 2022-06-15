@@ -63,7 +63,7 @@ const Cards = async () => {
         <p class="card-text d-flex justify-content-center card-text2">${juego.genero}</p>
         <p class="card-text d-flex justify-content-center card-text3">$${juego.precio}</p>
         <div class="d-flex justify-content-center">
-          <button onClick="agregarALocalStorage(this.id)" type="button" class="btn btn-dark boton" id=${juego.id}>Añadir al carrito</button>
+          <button onClick="agregarALocalStorage(this.id)" type="button" class="btn btn-dark" id=${juego.id}>Añadir al carrito</button>
         </div>
       </div>
     </div>
